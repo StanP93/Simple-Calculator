@@ -8,32 +8,32 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="calc">
-        <div id="display">
-        </div>
-        <div>
-            <button class="btn">AC</button>
-            <button class="btn">+/-</button>
-            <button class="operator btn">%</button>
-            <button class="operator btn">/</button>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="operator btn">*</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="operator btn">-</button>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="operator btn">+</button>
-            <button class="btn">0</button>
-            <button class="operator btn">**</button>
-            <button class="btn">,</button>
-            <button class="operator btn">=</button>
-        </div>
-    </div>
+    <article class="calc">
+        <output class="calc-result" id="result"></output>
+
+        <button type="button" class="calc-btn">7</button>
+        <button type="button" class="calc-btn">8</button>
+        <button type="button" class="calc-btn">9</button>
+        <button type="button" class="calc-btn calc-btn-operator">+</button>
+
+        <button type="button" class="calc-btn">4</button>
+        <button type="button" class="calc-btn">5</button>
+        <button type="button" class="calc-btn">6</button>
+        <button type="button" class="calc-btn calc-btn-operator">-</button>
+
+        <button type="button" class="calc-btn">1</button>
+        <button type="button" class="calc-btn">2</button>
+        <button type="button" class="calc-btn">3</button>
+        <button type="button" class="calc-btn calc-btn-operator">*</button>
+
+        <button type="button" class="calc-btn">0</button>
+        <button type="button" class="calc-btn">.</button>
+        <button type="button" class="calc-btn">00</button>
+        <button type="button" class="calc-btn calc-btn-operator">/</button>
+
+        <button type="button" class="calc-btn calc-btn-reset">C</button>
+        <button type="button" class="calc-btn calc-btn-equal">=</button>
+    </article>
     <script src="app.js"></script>
 </body>
 </html>
