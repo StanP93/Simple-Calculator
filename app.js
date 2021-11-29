@@ -60,11 +60,11 @@ function operation(oper) {
         if(memoryPendingOperation === '+') {
             memoryCurrentNumber = +(memoryCurrentNumber + parseFloat(localOperationMemory)).toFixed(2);
         } else if(memoryPendingOperation === '-') {
-            memoryCurrentNumber = (memoryCurrentNumber - parseFloat(localOperationMemory)).toFixed(2);
+            memoryCurrentNumber = +(memoryCurrentNumber - parseFloat(localOperationMemory)).toFixed(2);
         } else if(memoryPendingOperation === '*') {
-            memoryCurrentNumber = (memoryCurrentNumber * parseFloat(localOperationMemory)).toFixed(2);
+            memoryCurrentNumber = +(memoryCurrentNumber * parseFloat(localOperationMemory)).toFixed(2);
         } else if(memoryPendingOperation === '/') {
-            memoryCurrentNumber = (memoryCurrentNumber / parseFloat(localOperationMemory)).toFixed(2);
+            memoryCurrentNumber = +(memoryCurrentNumber / parseFloat(localOperationMemory)).toFixed(2);
         } else if(memoryPendingOperation === '^') {
             memoryCurrentNumber = Math.pow(memoryCurrentNumber,localOperationMemory);
         } else {
